@@ -1,0 +1,104 @@
+$primary-color:#348362;
+$text-color:#2f2f2f;
+  
+//---------- Global -----------//
+$error-color: #FF4136;
+$warning-color: #FF851B;
+$link-color: #2f6b52;
+$link-color-visited: #7834bc;
+$box-shadox-color: #999;
+$button-default-color: #fff;
+$button-default-color-hover: #fff;
+$button-default-background-color: #3b3b3b;
+$button-default-background-color-hover: #4f4f4f;
+$button-default-border-color: #dcdee1;
+$button-default-border-color-hover: #bbbfc5;
+
+
+//---------- Modules ----------//
+
+//Progress-bar
+$progressBar-color: grey;
+$progressBar-border-color: grey;
+
+//Admin Mode
+$adminMode-background-color: white;
+$adminMode-border-color: #e1e1e1;
+
+
+//Sitemap
+$sitemap-link-background-color: #f1f1f1;
+$sitemap-checkmark-background-color: #3b3b3b;
+
+
+//---------- Widgets ----------//
+
+//Collapsible Box
+$collapsibleBox-background-color: #fafafa;
+$collapsibleBox-border-color: #aaa;
+$collapsibleBox-border-bottom-color: #666;
+$collapsibleBox-handle-color: #222;
+
+//Modal
+$modal-overlay-background-color: #555;
+
+//Zoom
+$zoomin-focus-outline: #a6c8ff;
+
+
+//---------- Layout ----------//
+
+//Footer
+$footer-button-color: $text-color;
+$footer-button-background-color: white;
+$footer-button-background-color-hover: $primary-color;
+$footer-text-color: $text-color;
+$footer-page-of-text-color: $text-color;
+$footer-page-of-text-color-mobile: $text-color;
+$footer-container-background-color: white;
+$footer-button-border-color: #white;
+$footer-mobile-button-background-color: $primary-color;
+
+//Header
+$header-background-color:transparent;
+$header-text-color: #343434;
+$header-banner-title-color: #555;
+$header-module-name-color: #555;
+$header-button-background-color: transparent;
+$header-button-background-color-hover: $primary-color;
+$header-button-color:  $text-color; 
+
+
+//Top Navigation
+$top-nav-text-color: $text-color;
+$top-nav-button-color:$text-color;
+//mobile only
+$top-nav-button-color-mobile: $text-color;
+$top-nav-button-background-color:$primary-color;
+
+$hamburger-menu-color-mobile: $primary-color;
+
+//Toolbar
+$toolbox-link-color: #222;
+$toolbox-link-background-color: #fff;
+$toolbox-link-color-hover: #fff;
+$toolbox-link-background-color-hover: #6e6e6e;
+
+//Supermenu
+$supermenu-button-color: $text-color;
+$supermenu-button-background-color: white;
+$supermenu-button-color-hover: $primary-color;
+$supermenu-button-background-color-hover: white;
+
+$supermenu-dropdown-button-color: #222;
+$supermenu-dropdown-border-color: #000;
+$supermenu-dropdown-button-background-color: #fff;
+$supermenu-dropdown-button-color-hover: white;
+$supermenu-dropdown-button-background-color-hover: $primary-color;
+//mobile only
+$supermenu-link-color: #555;
+
+//heights
+$top-menu-height: 60px;
+$supermenu-height: 40px;
+$footer-height: 45px;

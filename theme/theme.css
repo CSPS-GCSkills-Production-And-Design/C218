@@ -1,0 +1,2944 @@
+@charset "UTF-8";
+@font-face {
+  font-family: "BebasNeueBold";
+  src: url("fonts/bebasneue/BebasNeueBold.eot");
+  src: url("fonts/bebasneue/BebasNeueBold.eot?#iefix") format("embedded-opentype"), url("fonts/bebasneue/BebasNeueBold.woff") format("woff"), url("fonts/bebasneue/BebasNeueBold.ttf") format("truetype");
+}
+@font-face {
+  font-family: "FuturaLtB";
+  src: url("fonts/futura/FuturaBT-Light.eot");
+  src: url("fonts/futura/FuturaBT-Light.eot?#iefix") format("embedded-opentype"), url("fonts/futura/FuturaBT-Light.woff") format("woff"), url("fonts/futura/FuturaBT-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: "FuturaMd";
+  src: url("fonts/futura/FuturaBT-Medium.eot");
+  src: url("fonts/futura/FuturaBT-Medium.eot?#iefix") format("embedded-opentype"), url("fonts/futura/FuturaBT-Medium.woff") format("woff"), url("fonts/futura/FuturaBT-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "FuturaMdBT";
+  src: url("fonts/futura/FuturaBT-Bold.eot");
+  src: url("fonts/futura/FuturaBT-Bold.eot?#iefix") format("embedded-opentype"), url("fonts/futura/FuturaBT-Bold.woff") format("woff"), url("fonts/futura/FuturaBT-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+/* line 34, scss/_typography.scss */
+h1 {
+  margin-top: 0;
+  font-family: FuturaMdBT, Arial, Helvetica, sans-serif;
+}
+
+/* line 39, scss/_typography.scss */
+h2 {
+  font-size: 20px;
+  margin-top: 25px;
+}
+
+/* line 3, scss/_launcher.scss */
+body.launchpage {
+  background-color: white;
+}
+
+/* line 7, scss/_launcher.scss */
+#splash-content span {
+  display: inherit;
+  width: inherit;
+  height: inherit;
+}
+
+/* ------------------ SPLASH ELEMENTS --------------*/
+/* line 16, scss/_launcher.scss */
+#launch-area {
+  background-color: white;
+}
+
+/* line 17, scss/_launcher.scss */
+#title-area {
+  background-image: url(C218_new/splash_en.jpg);
+  background-color: white;
+  width: 100%;
+  padding-bottom: 20%;
+  background-size: contain;
+  background-position: center center;
+  display: inline-block;
+  background-repeat: no-repeat;
+  text-indent: -9999px;
+}
+
+/* line 28, scss/_launcher.scss */
+html[lang=fr] #title-area {
+  background-image: url(C218_new/splash_fr.jpg);
+}
+
+/* line 33, scss/_launcher.scss */
+#launch-placement > a {
+  border: 1.5px solid #030202;
+  border-radius: 10px;
+  color: #030202;
+  font-family: arial;
+}
+
+/* line 39, scss/_launcher.scss */
+#launch-placement > a:hover, #launch-placement > a:focus {
+  background-color: #358664;
+  color: white;
+}
+
+/* line 45, scss/_launcher.scss */
+#splash-content:before {
+  background: none;
+  border: none;
+}
+
+/* line 50, scss/_launcher.scss */
+#wordmark {
+  height: 30px;
+}
+
+/*@import "./_various";*/
+/*@import "./_prefixers";*/
+/* line 156, ../common/scss/utils/mixins/helpers/_animations.scss */
+.LOM-feedback-transition {
+  /*-webkit-transition: background-color 1s linear;
+  -moz-transition: background-color 1s linear;
+  -o-transition: background-color 1s linear;
+  transition: background-color 1s linear;*/
+  /*background: white;*/
+  animation: color-me-in 0.75s;
+}
+
+@keyframes color-me-in {
+  0% {
+    background: #c8f9af;
+  }
+  100% {
+    background: white;
+  }
+}
+/*@import "./_animations";*/
+/*@import "./helpers/_helpers";*/
+/* line 1, ../common/scss/utils/_shorthands.scss */
+.alignLeft {
+  text-align: left;
+}
+
+/* line 4, ../common/scss/utils/_shorthands.scss */
+.alignRight {
+  text-align: right;
+}
+
+/* line 7, ../common/scss/utils/_shorthands.scss */
+.alignCenter {
+  text-align: center;
+}
+
+/* line 11, ../common/scss/utils/_shorthands.scss */
+.verticalCenter {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* line 22, ../common/scss/utils/_shorthands.scss */
+.w10 {
+  width: 10%;
+}
+
+/* line 22, ../common/scss/utils/_shorthands.scss */
+.w20 {
+  width: 20%;
+}
+
+/* line 22, ../common/scss/utils/_shorthands.scss */
+.w30 {
+  width: 30%;
+}
+
+/* line 22, ../common/scss/utils/_shorthands.scss */
+.w40 {
+  width: 40%;
+}
+
+/* line 22, ../common/scss/utils/_shorthands.scss */
+.w50 {
+  width: 50%;
+}
+
+/* line 22, ../common/scss/utils/_shorthands.scss */
+.w60 {
+  width: 60%;
+}
+
+/* line 22, ../common/scss/utils/_shorthands.scss */
+.w70 {
+  width: 70%;
+}
+
+/* line 22, ../common/scss/utils/_shorthands.scss */
+.w80 {
+  width: 80%;
+}
+
+/* line 22, ../common/scss/utils/_shorthands.scss */
+.w90 {
+  width: 90%;
+}
+
+/* line 22, ../common/scss/utils/_shorthands.scss */
+.w100 {
+  width: 100%;
+}
+
+/* line 7, scss/theme.scss */
+body {
+  background-color: #e6e6e6;
+  font-family: FuturaLtB, Arial, Helvetica, sans-serif !important;
+  overflow-x: hidden;
+}
+
+/* line 13, scss/theme.scss */
+html #wb-bnr > div.container {
+  background-repeat: no-repeat;
+  background-position: 0px;
+  background-color: white;
+  min-height: 175px;
+}
+@media (max-width: 991px) {
+  /* line 13, scss/theme.scss */
+  html #wb-bnr > div.container {
+    width: 100%;
+  }
+}
+/* line 24, scss/theme.scss */
+html[lang='en'] #wb-bnr > div.container {
+  background-image: url(C218_new/c218_banner_en.jpg);
+}
+@media (max-width: 767px) {
+  /* line 24, scss/theme.scss */
+  html[lang='en'] #wb-bnr > div.container {
+    background-position: -340px 0px;
+  }
+}
+/* line 30, scss/theme.scss */
+html[lang='fr'] #wb-bnr > div.container {
+  background-image: url(C218_new/C218_banner_fr.jpg);
+}
+@media (max-width: 767px) {
+  /* line 30, scss/theme.scss */
+  html[lang='fr'] #wb-bnr > div.container {
+    background-position: -400px 0px;
+  }
+}
+
+/* line 39, scss/theme.scss */
+main.container {
+  padding-bottom: 0;
+}
+
+/* line 41, scss/theme.scss */
+#dynamic_content {
+  background: url(C218_new/background_content.png) no-repeat 10px 0px;
+  padding-top: 50px;
+  overflow-x: hidden;
+  padding-bottom: 45px;
+}
+/* line 47, scss/theme.scss */
+#dynamic_content > h1 {
+  margin-left: 210px;
+}
+@media (max-width: 479px) {
+  /* line 47, scss/theme.scss */
+  #dynamic_content > h1 {
+    margin-left: 15px;
+  }
+}
+@media (max-width: 767px) {
+  /* line 41, scss/theme.scss */
+  #dynamic_content {
+    background: white;
+    padding-top: 15px;
+  }
+}
+
+/* line 64, scss/theme.scss */
+#wb-bar {
+  height: 40px;
+}
+@media (max-width: 991px) {
+  /* line 64, scss/theme.scss */
+  #wb-bar {
+    height: 60px;
+    margin-left: 0;
+  }
+}
+/* line 71, scss/theme.scss */
+#wb-bar h2.series-title {
+  font-family: BebasNeueBold, "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+  color: black !important;
+  opacity: 0.5;
+  font-size: 2em;
+}
+/* line 79, scss/theme.scss */
+#wb-bar > .container {
+  position: relative;
+  height: 40px;
+  background-color: white;
+  background-color: white;
+  -webkit-box-shadow: 0px 0px 30px -2px #9e9c9e;
+  -moz-box-shadow: 0px 0px -30px 2px #9e9c9e;
+  box-shadow: 0px 0px 30px -2px #9e9c9e;
+}
+@media (max-width: 991px) {
+  /* line 79, scss/theme.scss */
+  #wb-bar > .container {
+    height: 60px;
+  }
+}
+/* line 94, scss/theme.scss */
+#wb-bar ul.text-right > li > a {
+  height: 40px;
+  line-height: 40px;
+}
+/* line 97, scss/theme.scss */
+#wb-bar ul.text-right > li > a.lang {
+  white-space: nowrap;
+  display: inline-block;
+  text-align: left;
+  text-decoration: none;
+  font-family: FuturaMd, Arial, Helvetica, sans-serif !important;
+  text-transform: uppercase;
+  padding-left: 6px;
+}
+/* line 105, scss/theme.scss */
+#wb-bar ul.text-right > li > a.lang:hover, #wb-bar ul.text-right > li > a.lang:focus {
+  color: white !important;
+}
+/* line 109, scss/theme.scss */
+#wb-bar ul.text-right > li > a:not(.lang, #mb-pnl) {
+  width: 60px !important;
+}
+/* line 113, scss/theme.scss */
+#wb-bar .pnl-btn.text-right > li > a {
+  line-height: 30px;
+  margin-top: 8px;
+}
+
+/* line 117, scss/theme.scss */
+#wb-sm > .nvbar > div.row {
+  position: relative;
+  margin-left: 5px;
+  background-color: white;
+  z-index: 10;
+  -webkit-box-shadow: 0px 0px 30px -2px #9e9c9e;
+  -moz-box-shadow: 0px 0px -30px 2px #9e9c9e;
+  box-shadow: 0px 0px 30px -2px #9e9c9e;
+  margin-left: -5px;
+}
+/* line 127, scss/theme.scss */
+#wb-sm > .nvbar > div.row .backnext {
+  position: relative;
+}
+/* line 129, scss/theme.scss */
+#wb-sm > .nvbar > div.row .backnext a {
+  line-height: 22px;
+}
+/* line 131, scss/theme.scss */
+#wb-sm > .nvbar > div.row .backnext a:hover, #wb-sm > .nvbar > div.row .backnext a:focus {
+  color: #2D7255 !important;
+  overflow: hidden;
+}
+/* line 136, scss/theme.scss */
+#wb-sm > .nvbar > div.row .backnext span {
+  line-height: 40px;
+}
+
+/* line 141, scss/theme.scss */
+#wb-sm .supermenu {
+  font-family: FuturaMd, Arial, Helvetica, sans-serif;
+}
+/* line 145, scss/theme.scss */
+#wb-sm .supermenu li:first-of-type a.item {
+  padding-left: 6px;
+}
+/* line 147, scss/theme.scss */
+#wb-sm .supermenu li a.item {
+  position: relative;
+  border-right: none;
+}
+/* line 151, scss/theme.scss */
+#wb-sm .supermenu li a.item:after {
+  content: '' !important;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: #348362;
+  right: 5px;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+/* line 164, scss/theme.scss */
+#wb-sm .supermenu li a.item:hover:after, #wb-sm .supermenu li a.item:focus:after {
+  opacity: 0.8;
+}
+/* line 168, scss/theme.scss */
+#wb-sm .supermenu li a.item span.glyphicon-chevron-down {
+  display: none;
+}
+
+/* line 175, scss/theme.scss */
+footer {
+  margin: 0;
+  background: white;
+  box-shadow: 3px 3px 13px #a9a7a7;
+  position: relative;
+  z-index: 10;
+}
+/* line 181, scss/theme.scss */
+footer .backnext > span {
+  font-family: FuturaLtB, Arial, Helvetica, sans-serif;
+}
+/* line 184, scss/theme.scss */
+footer .backnext span {
+  line-height: 45px;
+}
+
+/* line 190, scss/theme.scss */
+div.backnext {
+  font-family: FuturaMd, Arial, Helvetica, sans-serif;
+}
+/* line 192, scss/theme.scss */
+div.backnext a, div.backnext span {
+  float: left;
+}
+/* line 195, scss/theme.scss */
+div.backnext .pagelbl {
+  display: none;
+}
+/* line 198, scss/theme.scss */
+div.backnext > a.back.disabled {
+  color: #999999;
+}
+
+@media (max-width: 991px) {
+  /* line 203, scss/theme.scss */
+  html.mobile footer .container .backnext a.back,
+  html.mobile footer .container .backnext a.next {
+    display: table-cell;
+    width: 20%;
+  }
+
+  /* line 208, scss/theme.scss */
+  html.mobile footer .container .backnext span:not(.pagelbl) {
+    width: 60%;
+  }
+}
+/* line 214, scss/theme.scss */
+#mb-pnl .mb-lvl-nb {
+  display: none;
+}
+
+/* line 219, scss/theme.scss */
+.overlay-def {
+  width: auto !important;
+}
+/* line 221, scss/theme.scss */
+.overlay-def .mfp-close {
+  right: 13px;
+  top: 8px;
+}
+/* line 225, scss/theme.scss */
+.overlay-def .mfp-close {
+  color: #45494b;
+  opacity: 1;
+}
+/* line 229, scss/theme.scss */
+.overlay-def header {
+  background: #cee2c7;
+}
+/* line 232, scss/theme.scss */
+.overlay-def .modal-title {
+  background: #cee2c7;
+  font-family: BebasNeueBold, "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+  font-size: 40px;
+  color: #45494b;
+  padding: 0;
+}
+/* line 239, scss/theme.scss */
+.overlay-def .modal-footer {
+  display: none;
+}
+
+/* line 244, scss/theme.scss */
+main.container {
+  padding-left: 0px !important;
+  padding-right: 0px !important;
+  background: url(C218_new/bg_main.png) repeat-y 11px 0px;
+}
+@media (max-width: 991px) {
+  /* line 244, scss/theme.scss */
+  main.container {
+    width: 100% !important;
+  }
+}
+@media (max-width: 479px) {
+  /* line 244, scss/theme.scss */
+  main.container {
+    background: white;
+  }
+}
+
+/* line 256, scss/theme.scss */
+.breadcrumb {
+  text-align: center;
+  font-size: 24px;
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 0;
+}
+
+/* line 263, scss/theme.scss */
+.shapeobj {
+  background: url("../content/medias/images/shapeObj.png") no-repeat !important;
+  background-position: -6px 0px !important;
+  min-height: 400px;
+  min-width: 661px;
+}
+/* line 268, scss/theme.scss */
+.shapeobj h3 {
+  margin: 105px 0 0 185px;
+}
+@media (max-width: 767px) {
+  /* line 263, scss/theme.scss */
+  .shapeobj {
+    background: none !important;
+    min-width: initial;
+    min-height: initial;
+  }
+  /* line 275, scss/theme.scss */
+  .shapeobj h3 {
+    margin: 20px 0 0 0;
+    float: left;
+  }
+}
+/* line 278, scss/theme.scss */
+.shapeobj .iconskip {
+  margin: -55px 0 0 540px;
+}
+@media (max-width: 767px) {
+  /* line 278, scss/theme.scss */
+  .shapeobj .iconskip {
+    margin: 5px 0 0 8px;
+    width: 50px;
+  }
+}
+/* line 285, scss/theme.scss */
+.shapeobj .shapeContent {
+  margin-left: 170px;
+}
+@media (max-width: 767px) {
+  /* line 285, scss/theme.scss */
+  .shapeobj .shapeContent {
+    margin-left: 20px;
+    max-width: 500px;
+  }
+}
+@media (max-width: 767px) {
+  /* line 285, scss/theme.scss */
+  .shapeobj .shapeContent {
+    margin-left: 0px;
+    width: 100%;
+  }
+}
+/* line 296, scss/theme.scss */
+.shapeobj .skipContent {
+  font-family: FuturaMd, "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+  margin-top: 55px;
+}
+
+/* line 302, scss/theme.scss */
+abbr[title], abbr[data-original-title] {
+  text-decoration: none;
+  border-bottom: 1px dotted black;
+}
+
+/* -------------------------------------------------------------------------------------------
+ * ---------------------------------------------------Site menu
+ ---------------------------------------------------------------------------------------------*/
+/* line 310, scss/theme.scss */
+.lt-ie9 .nvbar {
+  height: 40px;
+}
+
+/*----------------------------------------TITLE------------------------------------*/
+/* line 323, scss/theme.scss */
+.firstp {
+  border-left: 5px solid #358664;
+  padding-left: 20px;
+  font-size: 15px;
+}
+
+/* line 329, scss/theme.scss */
+#irregularShape > dl {
+  margin: 20px 0 23px 165px;
+  font-weight: 600;
+}
+
+/* line 335, scss/theme.scss */
+#wb-sttl {
+  padding: 0;
+  width: 100%;
+  height: 175px;
+}
+/* line 339, scss/theme.scss */
+#wb-sttl > a > span {
+  text-indent: -99999px;
+  display: block;
+}
+
+/* line 345, scss/theme.scss */
+#csps-modulenum {
+  display: none;
+}
+
+/* line 351, scss/theme.scss */
+#wb-sttl object {
+  /*icÃƒÂ´ne du title, ÃƒÂ©vÃƒÂ©nements souris dans mozilla*/
+  pointer-events: none;
+}
+
+/* ----------------WELCOME----------------*/
+/* ----------------------------------------------------------------------------
+----------------------------------------toolbox
+---------------------------------------------------------------------------- */
+/*#wb-lng ul.tb-container {
+  font-family: FuturaMd, Arial, Helvetica, sans-serif;
+  position: absolute;
+  text-align: center;
+  width: 138px;
+  margin-left: -92px;
+  z-index: 100;
+  border-top: 1px solid #d9d9d9;
+  margin-left: -39px;
+  top: 42px;
+  background-color: #fbfbfb;
+  a:hover {
+    background: #2D7255;
+  }
+}
+
+ul.tb-container {
+  a {
+    display: block;
+    padding: 4px 10px;
+    text-decoration: none;
+    border-bottom: 1px solid #d9d9d9;
+    border-left: 1px solid #d9d9d9;
+    border-right: 1px solid #d9d9d9;
+  }
+  li:first-child a {
+    border: 0;
+    border: 1px solid #d9d9d9;
+  }
+}
+
+#mb-tb {
+  margin: 0px;
+  > li > a {
+    display: block;
+    padding: 8px 20px;
+  }
+}
+*/
+/*CUSTOM*/
+/*****************************************
+	MARGINS & PADDINGS
+*****************************************/
+/* line 413, scss/theme.scss */
+.m-t-xs {
+  margin-top: 5%;
+}
+
+/* line 417, scss/theme.scss */
+.m-t-sm {
+  margin-top: 10%;
+}
+
+/* line 421, scss/theme.scss */
+.m-t-md {
+  margin-top: 20%;
+}
+
+/* line 425, scss/theme.scss */
+.m-t-lg {
+  margin-top: 25%;
+}
+
+/* line 429, scss/theme.scss */
+.m-l-xs {
+  margin-left: 5%;
+}
+
+/* line 433, scss/theme.scss */
+.m-l-sm {
+  margin-left: 18%;
+}
+
+/* line 437, scss/theme.scss */
+.m-l-md, .m-l-lg {
+  margin-left: 5%;
+}
+
+/*******************
+   Carousel Styles	
+********************/
+/* line 445, scss/theme.scss */
+.tab-count {
+  padding: 0 0 0 10px;
+}
+
+/* line 450, scss/theme.scss */
+.chalkboard .wb-tabs [role="tablist"] > li {
+  background-color: transparent !important;
+}
+/* line 453, scss/theme.scss */
+.chalkboard .wb-tabs [role="tablist"] > li.tab-count {
+  vertical-align: middle;
+  padding-bottom: 15px;
+}
+/* line 459, scss/theme.scss */
+.chalkboard .wb-tabs.carousel-s2 [role="tablist"] > li.prv a:hover, .chalkboard .wb-tabs.carousel-s2 [role="tablist"] > li.nxt a:hover {
+  color: #2f6b52;
+  background: transparent;
+}
+
+/* line 466, scss/theme.scss */
+.carouselBlock h2 {
+  font-size: 20px;
+  margin-top: 10px !important;
+}
+
+/* line 471, scss/theme.scss */
+.carouselText {
+  border: 1px solid wheat;
+  margin: 10px 0;
+  background: white;
+  height: 340px;
+  border-radius: 5px;
+  -moz-box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.5);
+  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.5);
+  overflow-y: auto;
+}
+
+/*.carouselScroll {
+  overflow-y: scroll;
+}*/
+/* line 487, scss/theme.scss */
+.carouselImage img {
+  margin-top: 10px;
+  text-align: center;
+  border-radius: 5px;
+  -moz-box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.7);
+  -webkit-box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.7);
+  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.7);
+}
+
+/* line 496, scss/theme.scss */
+.chalkboard .wb-tabs.carousel-s2 {
+  padding-right: 26px;
+  margin-bottom: 40px;
+  background-color: rgba(0, 0, 0, 0.8);
+  border-radius: 5px;
+}
+
+/* line 503, scss/theme.scss */
+.wb-tabs.carousel-s2 {
+  padding: 1em 1em 2em 1em !important;
+}
+/* line 505, scss/theme.scss */
+.wb-tabs.carousel-s2 [role="tablist"] {
+  bottom: 35px !important;
+}
+@media (max-width: 991px) {
+  /* line 505, scss/theme.scss */
+  .wb-tabs.carousel-s2 [role="tablist"] {
+    bottom: 0px !important;
+  }
+}
+/* line 511, scss/theme.scss */
+.wb-tabs.carousel-s2 [role="tablist"] > li.prv a .glyphicon, .wb-tabs.carousel-s2 [role="tablist"] > li.nxt a .glyphicon {
+  font-size: 1em !important;
+}
+
+/*********************
+     Spacing Styles
+**********************/
+/* line 522, scss/theme.scss */
+main.container {
+  z-index: 1;
+}
+
+/* line 527, scss/theme.scss */
+#inline-captions {
+  font-size: 15px;
+  padding: 0 16px !important;
+}
+
+/* line 532, scss/theme.scss */
+figcaption {
+  margin-top: 20px;
+}
+/* line 534, scss/theme.scss */
+figcaption p {
+  font-size: 15px;
+}
+
+/* line 539, scss/theme.scss */
+h2.learnHeading {
+  margin-top: 0 !important;
+}
+
+/* line 543, scss/theme.scss */
+.center {
+  margin: 0 auto;
+}
+
+/* line 547, scss/theme.scss */
+.canadaMap {
+  margin-bottom: 35px;
+}
+
+/* line 551, scss/theme.scss */
+.govCan {
+  margin-top: 20px;
+}
+
+/**********************
+   Encadrage Styles
+**********************/
+/* line 560, scss/theme.scss */
+.encadrage h2, .encadrage h3, .encadrage h4, .encadrage h5, .encadrage h6 {
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
+  padding: 15px;
+}
+
+/* line 568, scss/theme.scss */
+div.encadrage {
+  padding: 0px;
+  margin: 0px;
+  border: 1px solid #a5a5a5;
+  margin-bottom: 50px;
+  background-color: #fafafa;
+}
+
+/* line 576, scss/theme.scss */
+.encadrage_header {
+  /*background:url('wavy_blue/stripes.png')repeat-x ;*/
+  background-color: #2f6b52;
+  /*main-call-out-box */
+  color: #FFF;
+  padding-left: 15px;
+  margin-top: -25px;
+  font-size: 1em;
+}
+
+/* line 586, scss/theme.scss */
+.encadrage .glyphicon {
+  /* call_out_box_glyphicon_icon*/
+  padding-left: 7px;
+  font-size: 25px;
+  color: #FFF;
+}
+
+/* line 595, scss/theme.scss */
+div.encadrage > p, div.encadrage > ul {
+  margin: 10px 10px 10px 30px;
+  font-size: 16px !important;
+}
+/* line 600, scss/theme.scss */
+div.encadrage span.icon {
+  width: 39px;
+  height: 39px;
+  display: inline-block;
+  float: left;
+  margin: 10px;
+}
+/* line 606, scss/theme.scss */
+div.encadrage span.icon.pointer {
+  background: grey url("images/ico_pointer.png");
+}
+/* line 609, scss/theme.scss */
+div.encadrage span.icon.question {
+  background: grey url("images/ico_question.png");
+}
+/* line 612, scss/theme.scss */
+div.encadrage span.icon.warning {
+  background: grey url("images/ico_warning.png");
+}
+/* line 615, scss/theme.scss */
+div.encadrage span.icon.lightbulb {
+  background: transparent url("images/did_you_know_icon.png");
+  background-repeat: no-repeat;
+  margin: 6px 10px;
+}
+
+/*==================================================
+ * Effect 2
+ * ===============================================*/
+/* line 627, scss/theme.scss */
+.box {
+  border: 1px solid #b7b7b7;
+  background: #FFF;
+  padding: 0.5em;
+}
+@media (max-width: 479px) {
+  /* line 627, scss/theme.scss */
+  .box {
+    margin: 0;
+  }
+}
+
+/* line 635, scss/theme.scss */
+.effect2 {
+  position: relative;
+}
+/* line 637, scss/theme.scss */
+.effect2:before {
+  z-index: -1;
+  position: absolute;
+  content: "";
+  bottom: 15px;
+  top: 80%;
+  left: 10px;
+  width: 50%;
+  max-width: 300px;
+  background: #777;
+  -webkit-box-shadow: 0 15px 10px #777;
+  -moz-box-shadow: 0 15px 10px #777;
+  box-shadow: 0 15px 10px #777;
+  -webkit-transform: rotate(-3deg);
+  -moz-transform: rotate(-3deg);
+  -o-transform: rotate(-3deg);
+  -ms-transform: rotate(-3deg);
+  transform: rotate(-3deg);
+}
+/* line 656, scss/theme.scss */
+.effect2:after {
+  z-index: -1;
+  position: absolute;
+  content: "";
+  bottom: 15px;
+  top: 80%;
+  left: 10px;
+  width: 50%;
+  max-width: 300px;
+  background: #777;
+  -webkit-box-shadow: 0 15px 10px #777;
+  -moz-box-shadow: 0 15px 10px #777;
+  box-shadow: 0 15px 10px #777;
+  -webkit-transform: rotate(-3deg);
+  -moz-transform: rotate(-3deg);
+  -o-transform: rotate(-3deg);
+  -ms-transform: rotate(-3deg);
+  transform: rotate(-3deg);
+  -webkit-transform: rotate(3deg);
+  -moz-transform: rotate(3deg);
+  -o-transform: rotate(3deg);
+  -ms-transform: rotate(3deg);
+  transform: rotate(3deg);
+  right: 10px;
+  left: auto;
+}
+
+/*==================================================
+ * Effect 7
+ * ===============================================*/
+/* line 688, scss/theme.scss */
+.effect7 {
+  position: relative;
+  -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+  -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+}
+/* line 693, scss/theme.scss */
+.effect7:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+  -moz-box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+  top: 0;
+  bottom: 0;
+  left: 10px;
+  right: 10px;
+  -moz-border-radius: 100px / 10px;
+  border-radius: 100px / 10px;
+}
+/* line 707, scss/theme.scss */
+.effect7:after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+  -moz-box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+  top: 0;
+  bottom: 0;
+  left: 10px;
+  right: 10px;
+  -moz-border-radius: 100px / 10px;
+  border-radius: 100px / 10px;
+  right: 10px;
+  left: auto;
+  -webkit-transform: skew(8deg) rotate(3deg);
+  -moz-transform: skew(8deg) rotate(3deg);
+  -ms-transform: skew(8deg) rotate(3deg);
+  -o-transform: skew(8deg) rotate(3deg);
+  transform: skew(8deg) rotate(3deg);
+}
+
+/*******************
+ Circles Interaction
+********************/
+/* line 734, scss/theme.scss */
+.house_numbers {
+  width: 630px;
+  margin: 30px auto 0;
+}
+
+/* line 739, scss/theme.scss */
+details .house_numbers p {
+  padding: 0px;
+}
+
+/* line 743, scss/theme.scss */
+.circle {
+  border: 4px solid #cee2c7;
+  height: 113px;
+  width: 18%;
+  border-radius: 100px;
+  float: left;
+}
+
+/* line 751, scss/theme.scss */
+.fullmoon, .circle:hover {
+  background: #cee2c7;
+  border: 4px solid #cee2c7;
+}
+
+/* line 756, scss/theme.scss */
+.counter {
+  display: block;
+  /*font-size:2.5em;*/
+  font-size: 1.5em;
+  font-weight: bold;
+  width: 100%;
+  text-align: center;
+  padding-top: 0.4em;
+}
+/* line 764, scss/theme.scss */
+.counter a {
+  text-decoration: none;
+  color: #141414;
+}
+/* line 767, scss/theme.scss */
+.counter a:hover {
+  text-decoration: none;
+}
+
+/* line 773, scss/theme.scss */
+.subtext {
+  display: block;
+  text-align: center;
+  width: 100%;
+  margin-top: -10px;
+  line-height: 1;
+}
+
+/* line 781, scss/theme.scss */
+.spacer {
+  width: 6%;
+  float: left;
+  height: 108px;
+  font-size: 2.5em;
+  font-weight: bold;
+  text-align: center;
+}
+/* line 788, scss/theme.scss */
+.spacer p {
+  margin-top: 30px;
+  color: #bbb8b8;
+}
+
+/* line 794, scss/theme.scss */
+.starter_spacer {
+  width: 3%;
+  float: left;
+  height: 108px;
+  font-size: 3em;
+  font-weight: bold;
+}
+
+/**********************
+       Tree
+***********************/
+/* line 805, scss/theme.scss */
+.tree_diagram {
+  padding-top: 50px;
+}
+@media (max-width: 479px) {
+  /* line 805, scss/theme.scss */
+  .tree_diagram {
+    padding: 50px 0 0 0;
+    /*width:50%;
+    margin-left:auto;
+    margin-right:auto;*/
+  }
+}
+
+/* line 815, scss/theme.scss */
+.judicial {
+  position: absolute;
+  top: 21%;
+  left: 11%;
+}
+
+/* line 821, scss/theme.scss */
+.legislative {
+  position: absolute;
+  top: -1%;
+  left: 41%;
+  font-size: 20px;
+}
+
+/* line 828, scss/theme.scss */
+.executive {
+  position: absolute;
+  top: 21%;
+  right: 6%;
+}
+
+/* line 834, scss/theme.scss */
+.tree_changer {
+  cursor: pointer;
+  text-align: center;
+}
+/* line 837, scss/theme.scss */
+.tree_changer h3 {
+  font-size: 20px;
+}
+
+/*******************
+	  Tabbed	
+*******************/
+/* line 847, scss/theme.scss */
+.wb-tabs [role="tablist"] {
+  margin: 0 0 0 10px !important;
+  border-spacing: 0 0 !important;
+}
+/* line 850, scss/theme.scss */
+.wb-tabs [role="tablist"] > li {
+  background-color: #45494b;
+  top: 2px !important;
+}
+/* line 851, scss/theme.scss */
+.wb-tabs [role="tablist"] > li.active {
+  border-bottom: none !important;
+  z-index: 0 !important;
+}
+/* line 854, scss/theme.scss */
+.wb-tabs [role="tablist"] > li.active a {
+  border-color: #9ad75d;
+  color: white;
+  background-color: #45494b;
+}
+/* line 862, scss/theme.scss */
+.wb-tabs [role="tablist"] > li:hover {
+  background-color: #2f6b52;
+}
+/* line 865, scss/theme.scss */
+.wb-tabs [role="tablist"] > li a {
+  color: white;
+}
+
+/* line 871, scss/theme.scss */
+.tabpanels {
+  min-height: 1px !important;
+}
+
+/* line 878, scss/theme.scss */
+details {
+  margin-bottom: 0 !important;
+  border-radius: 0 !important;
+  padding: 0 !important;
+}
+/* line 882, scss/theme.scss */
+details summary {
+  color: black;
+  font-family: FuturaMd, "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
+/* line 885, scss/theme.scss */
+details summary:before {
+  font-family: 'sans-serif';
+}
+
+/* line 889, scss/theme.scss */
+details summary:hover {
+  background: #2f6b52;
+  color: white;
+  text-decoration: none;
+  /*transition*/
+  -webkit-transition: all 500ms ease;
+  -moz-transition: all 500ms ease;
+  -ms-transition: all 500ms ease;
+  -o-transition: all 500ms ease;
+  transition: all 500ms ease;
+}
+
+/* line 901, scss/theme.scss */
+details[open] {
+  background: #f3f3f3;
+  font-weight: 400;
+  font-size: 16px;
+  padding: 0 16px !important;
+}
+
+/* line 909, scss/theme.scss */
+#mb-pnl details[open] {
+  background: white;
+}
+/* line 912, scss/theme.scss */
+#mb-pnl nav a {
+  color: #333333;
+  margin: 0;
+}
+
+/* line 919, scss/theme.scss */
+details[open] summary:active {
+  background: #cee2c7;
+  color: black;
+  text-decoration: none;
+}
+/* line 925, scss/theme.scss */
+details summary:focus {
+  background: #cee2c7;
+  color: black;
+  text-decoration: none;
+}
+/* line 931, scss/theme.scss */
+details summary.icon1 h3, details summary.icon2 h3, details summary.icon3 h3 {
+  padding-left: 10px;
+  vertical-align: 55%;
+  font-size: 20px;
+  font-weight: 100;
+}
+/* line 938, scss/theme.scss */
+details summary.icon1:before, details summary.icon1[open]:before {
+  background-repeat: no-repeat;
+  background-position: 0px 3px;
+  background-size: 50px 50px;
+  display: inline-block;
+  width: 54px;
+  height: 48px;
+  content: "";
+}
+/* line 949, scss/theme.scss */
+details summary.icon2:before, details summary.icon2[open]:before {
+  background-repeat: no-repeat;
+  background-position: 0px 3px;
+  background-size: 50px 50px;
+  display: inline-block;
+  width: 54px;
+  height: 48px;
+  content: "";
+}
+/* line 960, scss/theme.scss */
+details summary.icon3:before, details summary.icon3[open]:before {
+  background-repeat: no-repeat;
+  background-position: 0px 3px;
+  background-size: 50px 50px;
+  display: inline-block;
+  width: 54px;
+  height: 48px;
+  content: "";
+}
+/* line 971, scss/theme.scss */
+details summary.icon1:before, details summary.icon1[open]:before {
+  background-image: url("C218_new/ico_skip.png");
+}
+/* line 976, scss/theme.scss */
+details summary.icon2:before, details summary.icon2[open]:before {
+  background-image: url("C218_new/ico_activity.png");
+}
+/* line 981, scss/theme.scss */
+details summary.icon3:before, details summary.icon3[open]:before {
+  background-image: url("C218_new/ico_objectives.png");
+}
+
+/* line 988, scss/theme.scss */
+.tgl-panel > div {
+  padding: 15px;
+}
+
+/* line 992, scss/theme.scss */
+details p {
+  padding: 5px;
+}
+
+/*Horizontal*/
+/* line 998, scss/theme.scss */
+.accordion2 {
+  display: block;
+  width: 40em;
+  /*	height:*/
+  margin: 0 auto;
+  background-color: #f3f3f3;
+  border: 1px solid #ddd;
+  overflow: auto;
+  /*border-radius: 5px;*/
+}
+/* line 1007, scss/theme.scss */
+.accordion2 details {
+  position: relative;
+  display: block;
+  float: left;
+  width: 4em;
+  height: 12em;
+  /*margin: 0.5em 0 0.5em 0.5em;*/
+  color: #333;
+  background-color: #333;
+  overflow: hidden;
+  border-radius: 3px;
+}
+/* line 1018, scss/theme.scss */
+.accordion2 details summary {
+  position: absolute;
+  font-size: 1em;
+  font-weight: bold;
+  width: 12em;
+  height: 5em;
+  top: 12em;
+  left: 0;
+  text-indent: 1em;
+  padding: 15px;
+  margin: 0;
+  color: white;
+  background: #45494b;
+  -webkit-transform-origin: 0 0;
+  -moz-transform-origin: 0 0;
+  -ms-transform-origin: 0 0;
+  -o-transform-origin: 0 0;
+  transform-origin: 0 0;
+  -webkit-transform: rotate(-90deg);
+  -moz-transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+  -o-transform: rotate(-90deg);
+  transform: rotate(-90deg);
+}
+/* line 1041, scss/theme.scss */
+.accordion2 details summary:open {
+  display: block;
+  width: 100%;
+  line-height: 2em;
+  text-decoration: none;
+  color: inherit;
+  outline: 0 none;
+}
+/* line 1050, scss/theme.scss */
+.accordion2 details:target {
+  width: 30em;
+  padding: 0 1em;
+  color: #333;
+  background-color: #fff;
+}
+/* line 1055, scss/theme.scss */
+.accordion2 details:target summary:open {
+  position: static;
+  font-size: 1.3em;
+  text-indent: 0;
+  color: #333;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+}
+
+/* line 1070, scss/theme.scss */
+.accordion details {
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  transition: all 1s ease;
+}
+/* line 1076, scss/theme.scss */
+.accordion details summary {
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  transition: all 1s ease;
+}
+
+/*******************details end***********************************************/
+/******************objectives************************************************/
+/*#objectivesleft{top:75px;}JD*/
+/* line 1089, scss/theme.scss */
+#dynamic_content.m1-0, #dynamic_content.m1-4, #dynamic_content.m2-0, #dynamic_content.m2-9, #dynamic_content.m3-0, #dynamic_content.m3-3, #dynamic_content.m4-0, #dynamic_content.m4-3, #dynamic_content.m5-0, #dynamic_content.m5-5, #dynamic_content.m6-0, #dynamic_content.m6-3 {
+  padding-bottom: 0;
+}
+
+/* line 1097, scss/theme.scss */
+.objective {
+  margin: -50px 0 0px 0;
+  position: relative;
+  overflow: hidden;
+}
+/* line 1101, scss/theme.scss */
+.objective img {
+  height: 575px;
+}
+@media (max-width: 1199px) {
+  /* line 1101, scss/theme.scss */
+  .objective img {
+    margin-left: -126px;
+    height: 540px;
+  }
+}
+@media (max-width: 767px) {
+  /* line 1101, scss/theme.scss */
+  .objective img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 250px;
+  }
+}
+@media (max-width: 767px) {
+  /* line 1097, scss/theme.scss */
+  .objective {
+    margin: 0;
+  }
+}
+
+/* line 1120, scss/theme.scss */
+.conclusion {
+  margin: -50px 0 0px 0;
+  position: relative;
+  overflow: hidden;
+}
+@media (max-width: 1199px) {
+  /* line 1124, scss/theme.scss */
+  .conclusion img {
+    margin-left: -55px;
+    height: 540px;
+  }
+}
+@media (max-width: 767px) {
+  /* line 1124, scss/theme.scss */
+  .conclusion img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 250px;
+  }
+}
+@media (max-width: 767px) {
+  /* line 1120, scss/theme.scss */
+  .conclusion {
+    margin: 0;
+  }
+}
+
+/* line 1141, scss/theme.scss */
+h3.objectives {
+  font-family: FuturaMd, "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+  font-size: 16px;
+  line-height: 0.3;
+  margin: 28px 0 8px 0;
+}
+
+/**note**/
+/* line 1151, scss/theme.scss */
+.note {
+  width: 270px;
+  /*height:300px;*/
+}
+
+/* line 1156, scss/theme.scss */
+h4.note {
+  font-family: BebasNeueBold, "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+  font-size: 35px;
+  height: 53px;
+  /* Rotate div */
+  -ms-transform: rotate(-90deg);
+  /* IE 9 */
+  -webkit-transform: rotate(-90deg);
+  /* Chrome, Safari, Opera */
+  transform: rotate(-90deg);
+  margin: -41px 0 25px -115px;
+}
+
+/* line 1169, scss/theme.scss */
+.note p {
+  font-family: FuturaLtB, "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+  font-style: italic;
+  font-size: 12px;
+  padding: 0 0 0 45px;
+}
+
+/**end note**/
+/******************end objectives************************************************/
+/******************ENd of MODULE************************************************/
+/* line 1180, scss/theme.scss */
+#endModuleleft {
+  top: 75px;
+}
+
+/* line 1185, scss/theme.scss */
+.endMod h3 {
+  font-family: FuturaMd, "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+  font-size: 16px;
+  line-height: 0.3;
+  margin: 28px 0 8px 0;
+}
+/* line 1191, scss/theme.scss */
+.endMod a {
+  line-height: 0.8;
+}
+
+/* line 1196, scss/theme.scss */
+.endModimg {
+  background: url("../content/medias/images/endmodule_final.png") no-repeat;
+  height: 632px;
+  background-size: 446px;
+  background-position: -55px 0px;
+  margin: -50px 0 0px 0px;
+}
+@media (max-width: 1199px) {
+  /* line 1196, scss/theme.scss */
+  .endModimg {
+    background-size: 300px;
+    height: 400px;
+    background-position: 0 0;
+    margin-top: -10px;
+  }
+}
+@media (max-width: 991px) {
+  /* line 1196, scss/theme.scss */
+  .endModimg {
+    height: 300px;
+    background-position: center top;
+    margin-top: -10px;
+  }
+}
+/* line 1214, scss/theme.scss */
+.endModimg span {
+  padding: 100px 80px 0 0;
+  float: right;
+  font-family: FuturaMd, "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+  font-size: 47px;
+  color: #358664;
+}
+
+/* line 1223, scss/theme.scss */
+h3.endMod span {
+  font-family: BebasNeueBold, "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+  font-size: 30px;
+}
+
+/******************Activity*****************************************************/
+/* line 1230, scss/theme.scss */
+.activityimg {
+  background: url("../content/medias/images/bg_activity.png") no-repeat;
+  min-height: 700px;
+  background-size: 964px !important;
+  background-position: 0px 80px;
+}
+@media (max-width: 1199px) {
+  /* line 1230, scss/theme.scss */
+  .activityimg {
+    background: none;
+  }
+  /* line 1237, scss/theme.scss */
+  .activityimg .ico_activity {
+    background: #f5f5f5;
+    border-top: 5px solid #358664;
+    background-image: none;
+    -webkit-box-shadow: 7px 10px 16px -5px #9e9c9e;
+    -moz-box-shadow: 7px 10px 16px -5px #9e9c9e;
+    box-shadow: 7px 10px 16px -5px #9e9c9e;
+    min-height: initial;
+    padding-bottom: 20px;
+  }
+}
+
+/* line 1249, scss/theme.scss */
+.ico_activity:before {
+  content: '';
+  background-image: url("C218_new/ico_activity.png");
+  background-repeat: no-repeat;
+  background-position: 790px 17px;
+  background-size: 85px 87px;
+  display: inline-block;
+  width: 900px;
+  height: 101px;
+  content: "";
+}
+@media (max-width: 1199px) {
+  /* line 1249, scss/theme.scss */
+  .ico_activity:before {
+    height: 75px;
+    background-position: 0px 15px;
+    background-size: 60px;
+  }
+}
+
+/* line 1266, scss/theme.scss */
+.qs-elearning-activity .current-question {
+  line-height: 3.75em;
+  margin: -60px 0 10px 57px;
+  font-family: BebasNeueBold, "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+  font-size: 28px;
+}
+@media (max-width: 479px) {
+  /* line 1266, scss/theme.scss */
+  .qs-elearning-activity .current-question {
+    margin: 0 0 10px 0;
+    line-height: 35px;
+  }
+}
+/* line 1276, scss/theme.scss */
+.qs-elearning-activity .spacing_1.qs-feedback, .qs-elearning-activity .spacing_2.qs-feedback {
+  margin: 190px 0 10px 0;
+}
+/* line 1282, scss/theme.scss */
+.qs-elearning-activity .qs-step3 .current-question {
+  display: none;
+}
+/* line 1286, scss/theme.scss */
+.qs-elearning-activity legend {
+  margin-bottom: 10px;
+}
+/* line 1289, scss/theme.scss */
+.qs-elearning-activity label {
+  max-width: 90%;
+  vertical-align: top;
+}
+/* line 1293, scss/theme.scss */
+.qs-elearning-activity fieldset {
+  padding: 0 !important;
+  margin: -85px 0 0 58px;
+}
+@media (max-width: 479px) {
+  /* line 1293, scss/theme.scss */
+  .qs-elearning-activity fieldset {
+    margin: 0;
+  }
+}
+/* line 1301, scss/theme.scss */
+.qs-elearning-activity h2.h2_activity {
+  font-size: 18px;
+}
+@media (max-width: 767px) {
+  /* line 1301, scss/theme.scss */
+  .qs-elearning-activity h2.h2_activity {
+    margin-top: 0;
+  }
+}
+/* line 1308, scss/theme.scss */
+.qs-elearning-activity h3.h3_activity {
+  font-size: 15px;
+  line-height: 1.2;
+}
+/* line 1313, scss/theme.scss */
+.qs-elearning-activity .qs-start-activity {
+  margin: 25px 0 0 75px;
+}
+@media (max-width: 767px) {
+  /* line 1313, scss/theme.scss */
+  .qs-elearning-activity .qs-start-activity {
+    margin: 0;
+  }
+}
+/* line 1320, scss/theme.scss */
+.qs-elearning-activity .qs-feedback-final {
+  margin: 0px 0 0px 75px;
+}
+@media (max-width: 767px) {
+  /* line 1320, scss/theme.scss */
+  .qs-elearning-activity .qs-feedback-final {
+    margin: 0;
+  }
+}
+/* line 1326, scss/theme.scss */
+.qs-elearning-activity .qs-feedback-final > .tabpanels {
+  padding: 24px !important;
+}
+/* line 1329, scss/theme.scss */
+.qs-elearning-activity .qs-feedback-final > .yourscore {
+  text-transform: uppercase;
+  font-family: bebasNeueBold, "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+  font-size: 25px;
+  letter-spacing: 0.5px;
+}
+/* line 1338, scss/theme.scss */
+.qs-elearning-activity .qs-final-positive-feedback > .wb-tabs {
+  margin-top: 20px;
+}
+/* line 1342, scss/theme.scss */
+.qs-elearning-activity a.qs-retry-activity {
+  text-transform: uppercase;
+  font-family: bebasNeueBold, "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+  color: #333333;
+  font-size: 22px;
+  letter-spacing: 0.5px;
+}
+/* line 1348, scss/theme.scss */
+.qs-elearning-activity a.qs-retry-activity:hover {
+  color: #358664;
+}
+/* line 1353, scss/theme.scss */
+.qs-elearning-activity .details-panelFinal > summary > h4 {
+  text-align: center;
+  font-family: bebasNeueBold, "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+  font-size: 22px;
+  letter-spacing: 0.5px;
+  padding: 15px;
+}
+/* line 1361, scss/theme.scss */
+.qs-elearning-activity .qs-recap-template {
+  padding: 35px;
+}
+/* line 1365, scss/theme.scss */
+.qs-elearning-activity .qs-feedback {
+  margin: 135px 0 10px 0;
+}
+@media (max-width: 1199px) {
+  /* line 1365, scss/theme.scss */
+  .qs-elearning-activity .qs-feedback {
+    margin: 15px 0 10px 0;
+    padding: 15px 0 15px 0;
+  }
+}
+/* line 1372, scss/theme.scss */
+.qs-elearning-activity .qs-start, .qs-elearning-activity .qs-submit, .qs-elearning-activity .qs-continue {
+  padding: 5px 40px 5px 40px;
+  margin-top: 5px;
+  border: 2px solid #486a61;
+  border-radius: 8px !important;
+}
+/* line 1380, scss/theme.scss */
+.qs-elearning-activity .qs-start:hover, .qs-elearning-activity .qs-start:focus {
+  background-color: #486a61;
+  color: white;
+  border: 2px solid #486a61;
+  border-radius: 8px !important;
+}
+/* line 1389, scss/theme.scss */
+.qs-elearning-activity .qs-submit:hover, .qs-elearning-activity .qs-submit:focus {
+  background-color: #486a61;
+  color: white;
+  border: 2px solid #486a61;
+  border-radius: 8px !important;
+}
+/* line 1398, scss/theme.scss */
+.qs-elearning-activity .qs-continue:hover, .qs-elearning-activity .qs-continue:focus {
+  background-color: #486a61;
+  color: white;
+  border: 2px solid #486a61;
+  border-radius: 8px !important;
+}
+
+/*****************end Activity**************************************************/
+/*btn*/
+/* line 1412, scss/theme.scss */
+.btn-default, .open > .btn-default.dropdown-toggle {
+  font-family: FuturaMd, "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+  color: #486a61;
+  background-color: transparent;
+}
+
+/* line 1419, scss/theme.scss */
+.btn-default:hover, .btn-default:focus, .btn-default.focus, .btn-default:active, .btn-default.active {
+  font-family: FuturaMd, "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+  color: #486a61;
+  background-color: transparent;
+}
+
+/* line 1426, scss/theme.scss */
+.open > .btn-default.dropdown-toggle {
+  font-family: FuturaMd, "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+  color: #486a61;
+  background-color: transparent;
+}
+
+/*****************Tab panel**************************************************/
+/* line 1434, scss/theme.scss */
+.tabpanels {
+  min-height: 0 !important;
+}
+
+/* line 1439, scss/theme.scss */
+.wb-tabs [role="tablist"] > li {
+  background: #45494b !important;
+  color: white;
+  font-size: 14px;
+  letter-spacing: 5;
+}
+/* line 1444, scss/theme.scss */
+.wb-tabs [role="tablist"] > li a {
+  font-family: FuturaMdBT, "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+  background: transparent;
+  /*JD*/
+  color: white;
+  /*padding:12px!important;JD*/
+}
+/* line 1452, scss/theme.scss */
+.wb-tabs [role="tablist"] > li.active a {
+  color: black;
+  background: #f3f3f3;
+  border-top: 9px solid #2f6b52;
+}
+/* line 1458, scss/theme.scss */
+.wb-tabs [role="tablist"] > li a:hover {
+  color: white;
+  background: #2f6b52;
+  border-top: 4px solid #2f6b52;
+  /*transition*/
+  -webkit-transition: all 500ms ease;
+  -moz-transition: all 500ms ease;
+  -ms-transition: all 500ms ease;
+  -o-transition: all 500ms ease;
+  transition: all 500ms ease;
+}
+/* line 1468, scss/theme.scss */
+.wb-tabs [role="tablist"] > li a:focus {
+  outline: thin dotted white;
+  outline: 5px auto -webkit-focus-ring-color;
+}
+
+/*****************end Tab panel**************************************************/
+/**********************Shape objectives*****************************************/
+/* ------------------------------------------GRAPHIC m2-7 ------------------------------------------*/
+/* Graphiques Module 6 m2-17       */
+/* line 1488, scss/theme.scss */
+#publicservice {
+  position: relative;
+  /*color:#fff;*/
+  width: 370px;
+}
+/* line 1492, scss/theme.scss */
+#publicservice span {
+  font-size: 35px;
+  font-family: 'BebasNeueBold', "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
+/* line 1496, scss/theme.scss */
+#publicservice a {
+  text-decoration: none;
+}
+/* line 1498, scss/theme.scss */
+#publicservice a:hover, #publicservice a:visited {
+  text-decoration: underline;
+  color: white;
+}
+/* line 1503, scss/theme.scss */
+#publicservice #others, #publicservice #revAgency, #publicservice #natDef, #publicservice #socialDev, #publicservice #correctService {
+  position: absolute;
+}
+/* line 1506, scss/theme.scss */
+#publicservice #others {
+  top: 145px;
+  left: 240px;
+}
+@media (max-width: 991px) {
+  /* line 1506, scss/theme.scss */
+  #publicservice #others {
+    top: 41%;
+  }
+}
+/* line 1513, scss/theme.scss */
+#publicservice #revAgency {
+  top: 190px;
+  left: 60px;
+  color: white;
+}
+@media (max-width: 991px) {
+  /* line 1513, scss/theme.scss */
+  #publicservice #revAgency {
+    top: 54%;
+  }
+}
+/* line 1521, scss/theme.scss */
+#publicservice #natDef {
+  top: 117px;
+  left: 45px;
+  color: white;
+}
+@media (max-width: 991px) {
+  /* line 1521, scss/theme.scss */
+  #publicservice #natDef {
+    top: 38%;
+  }
+}
+@media (max-width: 767px) {
+  /* line 1521, scss/theme.scss */
+  #publicservice #natDef {
+    top: 40%;
+  }
+}
+/* line 1532, scss/theme.scss */
+#publicservice #socialDev {
+  top: 55px;
+  left: 72px;
+}
+@media (max-width: 991px) {
+  /* line 1532, scss/theme.scss */
+  #publicservice #socialDev {
+    top: 23%;
+  }
+}
+@media (max-width: 767px) {
+  /* line 1532, scss/theme.scss */
+  #publicservice #socialDev {
+    top: 24%;
+  }
+}
+@media (max-width: 479px) {
+  /* line 1532, scss/theme.scss */
+  #publicservice #socialDev {
+    top: 27%;
+  }
+}
+/* line 1545, scss/theme.scss */
+#publicservice #correctService {
+  top: 20px;
+  left: 123px;
+}
+@media (max-width: 991px) {
+  /* line 1545, scss/theme.scss */
+  #publicservice #correctService {
+    top: 18%;
+  }
+}
+@media (max-width: 767px) {
+  /* line 1545, scss/theme.scss */
+  #publicservice #correctService {
+    top: 18%;
+  }
+}
+@media (max-width: 479px) {
+  /* line 1545, scss/theme.scss */
+  #publicservice #correctService {
+    top: 22%;
+  }
+}
+/* line 1559, scss/theme.scss */
+#publicservice #title .line1 {
+  margin: 0px;
+}
+/* line 1562, scss/theme.scss */
+#publicservice #title .line2 {
+  margin: 0;
+}
+
+/* line 1568, scss/theme.scss */
+#square {
+  width: 100px;
+  height: 100px;
+  background: #e6e6e6;
+}
+
+/* line 1574, scss/theme.scss */
+#square1 {
+  width: 100px;
+  height: 100px;
+  background: #486a61;
+}
+
+/* line 1580, scss/theme.scss */
+#square2 {
+  width: 100px;
+  height: 100px;
+  background: #358664;
+}
+
+/* line 1586, scss/theme.scss */
+#square3 {
+  width: 100px;
+  height: 100px;
+  background: #9ad75d;
+}
+
+/* line 1592, scss/theme.scss */
+#square4 {
+  width: 100px;
+  height: 100px;
+  background: #00dec6;
+}
+
+/* ------------------------------------------ END GRAPHIC m2-7 ------------------------------------------*/
+/* ----------------------------------------------------------------------------
+----------------------------------------SPLASH
+---------------------------------------------------------------------------- */
+/* line 1603, scss/theme.scss */
+.obfuscated {
+  display: none;
+}
+
+/* only top */
+/* ---------------------------------------------------------------------------------------------
+                                         content Elements
+--------------------------------------------------------------------------------------------- */
+/* ----------------objectif----------------*/
+/* ----------------sitemap----------------*/
+/* line 1625, scss/theme.scss */
+#map_origin {
+  padding-left: 0;
+}
+
+/* line 1629, scss/theme.scss */
+.mod-index {
+  margin-top: 25px;
+}
+/* line 1631, scss/theme.scss */
+.mod-index > h2 {
+  margin-top: 35px;
+}
+/* line 1634, scss/theme.scss */
+.mod-index h3, .mod-index h4, .mod-index h5 {
+  margin: 5px 0px 5px 0px;
+  font-size: 1em;
+}
+
+/* line 1641, scss/theme.scss */
+#sitemap_pop > .modal-body h3, #sitemap_pop > .modal-body h4, #sitemap_pop > .modal-body h5 {
+  margin: 5px 0px 5px 0px;
+  font-size: 1em;
+}
+
+/* line 1647, scss/theme.scss */
+.mod-index ul > li, #sitemap_pop > .modal-body ul > li {
+  margin: 1px;
+  list-style: none;
+  /*height:25px;*/
+  /*list-style:url(base/sitemap_bullet.png);*/
+}
+
+/* line 1654, scss/theme.scss */
+.mod-index ul > li.sub-page, #sitemap_pop > .modal-body ul > li.sub-page, .index-list {
+  padding-left: 30px;
+}
+@media (max-width: 479px) {
+  /* line 1654, scss/theme.scss */
+  .mod-index ul > li.sub-page, #sitemap_pop > .modal-body ul > li.sub-page, .index-list {
+    padding-left: 0;
+  }
+}
+
+/* line 1661, scss/theme.scss */
+.sub-page {
+  height: 22px;
+}
+
+/* line 1665, scss/theme.scss */
+.mod-index ul > li.isActivity, #sitemap_pop > .modal-body ul > li.isActivity {
+  background: url(base/sitemap_activty.png) no-repeat;
+  font-weight: 600;
+  height: 25px;
+}
+
+/* line 1671, scss/theme.scss */
+.mod-index ul > li.isQuiz, #sitemap_pop > .modal-body ul > li.isQuiz {
+  font-weight: 600;
+  background: url(base/sitemap_quiz.png) no-repeat;
+  height: 25px;
+}
+
+/* line 1677, scss/theme.scss */
+.mod-index ul > li.viewed > a > .checkmark-viewed, #sitemap_pop > .modal-body ul > li.viewed > a > .checkmark-viewed {
+  float: right;
+  display: inline-block;
+  width: 30px;
+  height: inherit;
+  text-indent: 9999px;
+  overflow: hidden;
+  background: url(base/sitemap_check.png) 5px 0px no-repeat;
+}
+
+/* line 1687, scss/theme.scss */
+.mod-index ul > li > a, #sitemap_pop > .modal-body ul > li > a {
+  background-color: #f1f1f1;
+  height: inherit;
+  display: block;
+}
+
+/* line 1693, scss/theme.scss */
+.mod-index > ul > li > a {
+  /*font-weight:600;*/
+}
+
+/* ----------------course complete----------------*/
+/* ----------------progress bar----------------*/
+/* ----------------collapsible-box----------------*/
+/* line 1707, scss/theme.scss */
+div.collapsible-box {
+  position: relative;
+  border: 1px solid #aaa;
+  border-bottom: 4px solid #666;
+  background: #fafafa;
+  /*padding: 5px 5px 5px 5px;*/
+  height: 80px;
+  margin-bottom: 20px;
+}
+/* line 1715, scss/theme.scss */
+div.collapsible-box.opened {
+  height: auto;
+  padding-bottom: 30px;
+}
+/* line 1718, scss/theme.scss */
+div.collapsible-box.opened p.handle {
+  background: none;
+}
+/* line 1722, scss/theme.scss */
+div.collapsible-box > div.wrapper {
+  overflow: hidden;
+  height: 100%;
+  margin-bottom: 8px;
+  padding: 5px;
+}
+/* line 1728, scss/theme.scss */
+div.collapsible-box p.handle {
+  position: absolute;
+  font-weight: bold;
+  color: #222;
+  z-index: 200;
+  width: 100%;
+  bottom: 0px;
+  height: 60px;
+  text-align: center;
+  background: url(base/collapsible-fade.png) repeat-x;
+  margin: 0;
+}
+/* line 1739, scss/theme.scss */
+div.collapsible-box p.handle > span {
+  position: absolute;
+  z-index: 200;
+  bottom: 0px;
+  left: 50%;
+  display: block;
+  width: 36px;
+  height: 36px;
+  margin-left: -18px;
+}
+/* line 1748, scss/theme.scss */
+div.collapsible-box p.handle > span a {
+  width: 36px;
+  height: 36px;
+  background: url(base/collapsible-handle.png) no-repeat;
+  display: block;
+  text-decoration: none;
+}
+/* line 1754, scss/theme.scss */
+div.collapsible-box p.handle > span a:hover {
+  background-position: -36px 0;
+}
+/* line 1757, scss/theme.scss */
+div.collapsible-box p.handle > span a.opened {
+  background-position: 0 -36px;
+}
+/* line 1759, scss/theme.scss */
+div.collapsible-box p.handle > span a.opened:hover {
+  background-position: -36px -36px;
+}
+
+/*fixes*/
+/* line 1771, scss/theme.scss */
+#wb-sttl.removeMod #csps-modulenum, #wb-sttl.removeMod #csps-modulename {
+  display: none;
+}
+
+/* line 1776, scss/theme.scss */
+#csps-modulename {
+  font-family: BebasNeueBold, "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+  position: absolute;
+  margin-top: 66px;
+  margin-left: 10px !important;
+  background: url(C218_new/bg_bubble.png) no-repeat left bottom;
+  min-height: 70px;
+  padding: 20px 25px;
+  font-size: 2em;
+  display: table-cell;
+}
+/* line 1786, scss/theme.scss */
+#csps-modulename > a {
+  color: #343434;
+  text-decoration: none;
+  display: table-cell;
+}
+/* line 1790, scss/theme.scss */
+#csps-modulename > a:hover {
+  background: transparent !important;
+}
+/* line 1793, scss/theme.scss */
+#csps-modulename > a > span {
+  display: none;
+}
+
+/* ---------------------------------------------------------------------------------------------
+                                         COLORS
+--------------------------------------------------------------------------------------------- */
+/* nother light grey */
+/* light Grey for footer I think */
+/* disabled grey */
+/*white bg */
+/* line 1818, scss/theme.scss */
+ul.sm.open > li, #csps-modulename, #wb-sm > .nvbar, .welcome footer > .container, main.container {
+  /*background-color:white;JD*/
+}
+
+/*white txt*/
+/* fade to white*/
+/* line 1827, scss/theme.scss */
+.fadeout:after {
+  background: linear-gradient(rgba(0, 0, 0, 0), #fff);
+}
+
+/* Medium view and under */
+@media screen and (max-width: 1199px) {
+  /*
+    WET-BOEW
+    @title: Medium view and under (screen only)
+   */
+  /*.endModimg {
+    background-position: 56px 25px;
+    margin: 0px 0px -47px 0px;
+  }*/
+  /* line 1846, scss/theme.scss */
+  #objectivesleft {
+    top: 5px !important;
+  }
+
+  /* line 1849, scss/theme.scss */
+  .objectivesimg, .objectivesimg2, .objectivesimg3, .objectivesimg4, .objectivesimg5, .objectivesimg6, .objectivesimg7 {
+    /* max-width: 697px!important; */
+    max-height: 584px;
+    background-size: 588px !important;
+    background-position: 108px 83px !important;
+  }
+}
+/* Small view and over */
+@media screen and (min-width: 768px) {
+  /*main {
+    background: url(C218_new/bg_main.png) repeat-y -9px 0px !important;
+  }*/
+  /**********************Shape objectives*****************************************/
+  /*.shapeobj {
+    background-position: 8px 0px !important;
+  }*/
+  /**********************end shape objectives **********************************/
+}
+/* Medium view and over */
+/* Large view and over */
+@media screen and (min-width: 1200px) {
+  /*
+    WET-BOEW
+    @title: Large view and over (screen only)
+   */
+}
+/* Extra-extra-small view */
+@media screen and (max-width: 479px) {
+  /* line 1885, scss/theme.scss */
+  .ico_activity:before {
+    width: 100px !important;
+    background-position: 0px 16px !important;
+  }
+
+  /*.endModimg {
+    margin: 0px 0px -47px -102px;
+  }*/
+  /* line 1893, scss/theme.scss */
+  #objectivesleft {
+    top: 5px !important;
+  }
+
+  /* line 1896, scss/theme.scss */
+  .objectivesimg {
+    width: 452px !important;
+    height: 531px;
+    background-size: 504px !important;
+    background-position: -19px 68px !important;
+  }
+}
+/* Extra-small view */
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  /*
+    WET-BOEW
+    @title: Extra-small view (screen only)
+   */
+  /* line 1914, scss/theme.scss */
+  main.container {
+    background: url(C218_new/bg_main.png) repeat-y -9px 0px !important;
+  }
+
+  /*#objectivesleft {
+    top: 5px !important;
+    left: 25px;
+  }*/
+  /* Small view */
+}
+@media screen and (min-width: 480px) and (max-width: 767px) and (min-width: 768px) and (max-width: 991px) {
+  /*
+    WET-BOEW
+    @title: Small view (screen only)
+   */
+  /* line 1928, scss/theme.scss */
+  section {
+    margin-top: 50px;
+  }
+
+  /* line 1931, scss/theme.scss */
+  .breadcrumb {
+    padding: 0 !important;
+    margin-bottom: 0 !important;
+    text-align: center;
+    font-size: 18px;
+    width: 750px;
+    border-bottom: 2px solid #cecece;
+    margin: 0 auto;
+    background: #f5f5f5 !important;
+  }
+
+  /* line 1942, scss/theme.scss */
+  #wb-info h3 {
+    white-space: nowrap;
+  }
+
+  /* line 1945, scss/theme.scss */
+  .ico_activity:before {
+    background-position: 462px 18px;
+  }
+
+  /* line 1948, scss/theme.scss */
+  .shapeobj {
+    background-position: -100px 0px !important;
+  }
+
+  /* line 1951, scss/theme.scss */
+  .iconskip {
+    margin: -55px 0 0 520px;
+  }
+
+  /* line 1954, scss/theme.scss */
+  .shapeobj h3 {
+    margin: 105px 0 0 150px;
+  }
+
+  /* line 1957, scss/theme.scss */
+  .shapeContent {
+    margin-left: 150px;
+    max-width: 340px;
+  }
+}
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  /* Medium view */
+}
+@media screen and (min-width: 480px) and (max-width: 767px) and (min-width: 992px) and (max-width: 1199px) {
+  /*
+    WET-BOEW
+    @title: Medium view (screen only)
+    
+   */
+}
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  /* Large view */
+}
+@media screen and (min-width: 480px) and (max-width: 767px) and (min-width: 1200px) and (max-width: 1599px) {
+  /*
+    WET-BOEW
+    @title: Large view (screen only)
+   */
+}
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  /* Extra-large view */
+}
+@media screen and (min-width: 480px) and (max-width: 767px) and (min-width: 1600px) {
+  /*
+    WET-BOEW
+    @title: Extra-large view (screen only)
+   */
+}
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  /* -----------------------------------------------------
+  
+                    Print view 
+  				  
+  -------------------------------------------------------*/
+  /* line 1995, scss/theme.scss */
+  #wb-lng > ul > li > ul > li > a:focus, #wb-lng > ul > li > ul > li > a:hover {
+    display: block;
+  }
+}
+/* -----------------------------------------------------
+
+                  Quiz Styles
+				  
+-------------------------------------------------------*/
+/* ----------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/* JBB Design Icons and Skip the Test
+/*
+/* ----------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/* START ///// DESIGN SKIP TO TEST
+/* JBB
+/* ----------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/* ----------------------------------------------------------------------------------------------------------------------------------------------------------*/
+@media (min-width: 450px) and (max-width: 490px) {
+  /* line 2017, scss/theme.scss */
+  #wrapperskip {
+    /* this is the whole section, this section needs some adjustment due to the position in a smaller resolution*/
+    max-width: 400px;
+    margin: -3px 0 80px -3px;
+    background: #e6e6e6;
+  }
+
+  /* line 2023, scss/theme.scss */
+  #irregularShape {
+    /* this is drawing the irregular shape, it is done with borders*/
+    border-bottom: 275px solid #e6e6e6;
+    border-left: 1px solid transparent;
+    border-right: 80px solid transparent;
+    border-top: 10px solid transparent;
+    height: 0;
+    width: 470px;
+    transform: rotate(-2deg);
+    -ms-transform: rotate(-2deg);
+    /* IE 9 */
+    -webkit-transform: rotate(-2deg);
+    /* Safari and Chrome */
+    background: url(C218_new/bg_skip.png) no-repeat -21px 30px;
+  }
+  /* line 2024, scss/theme.scss */
+  #irregularShape > dl {
+    min-width: 340px;
+    margin: 20px 0 20px 50px !important;
+    font-weight: 600;
+  }
+
+  /* line 2043, scss/theme.scss */
+  .irregularShape > .skiptothetest {
+    margin-left: 20px;
+  }
+
+  /* line 2046, scss/theme.scss */
+  #skip {
+    margin-left: 1%;
+  }
+  /* line 2048, scss/theme.scss */
+  #skip img.skipBorder {
+    /* this position the litle green border */
+    position: absolute;
+    left: 10px;
+  }
+  /* line 2053, scss/theme.scss */
+  #skip.skiptothetest h3 {
+    /* this position the title and add the white background */
+    width: 400px;
+    height: 51px;
+    background: #FFFFFF;
+    padding: 15px 0 0 30px;
+    margin-left: 12px;
+  }
+
+  /* line 2062, scss/theme.scss */
+  .skiptest {
+    /* this position the icon skip */
+    position: absolute;
+    top: 10px;
+    left: 360px;
+  }
+
+  /* ----------------------------------------------------------------------------------------------------------------------------------------------------------*/
+  /* START ICON Tip Left////*/
+  /* line 2070, scss/theme.scss */
+  #wrapperIconTips {
+    /* this is the whole section*/
+    min-width: 200px;
+    margin: 3px 0 30px -10px;
+    background-position: bottom left;
+    padding: 0 0 0 10px;
+    min-height: 550px;
+    /*border:#486a61 dotted 1px;*/
+  }
+
+  /* line 2079, scss/theme.scss */
+  #irregularShapeIconTips {
+    /* this is drawing the irregular shape, it is done with borders*/
+    border-bottom: 500px solid #d7f3b4;
+    /*#9ad750 original green from palette*/
+    border-left: 7px solid transparent;
+    border-right: 30px solid transparent;
+    border-top: 30px solid transparent;
+    height: 0;
+    min-width: 380px;
+    transform: rotate(-2deg);
+    -ms-transform: rotate(-2deg);
+    /* IE 9 */
+    -webkit-transform: rotate(-2deg);
+    /* Safari and Chrome */
+  }
+
+  /* line 2095, scss/theme.scss */
+  #wrapperIconTips #irregularShapeIconTips #shapeIconTips.iconTips p, #wrapperIconTips #irregularShapeIconTips #shapeIconTips.iconTips h4 {
+    /* this is the whole section*/
+    max-width: 430px;
+    margin: -10px 0px 0px -40px;
+  }
+
+  /* ----------------------------------------------------------------------------------------------------------------------------------------------------------*/
+  /* START ICON Tip RIGHT ////*/
+  /* line 2103, scss/theme.scss */
+  #wrapperIconTipsR {
+    /* this is the whole section*/
+    max-width: 95%;
+    margin: 25px 0 20 15px;
+    min-height: 300px;
+  }
+
+  /* line 2109, scss/theme.scss */
+  #irregularShapeIconTipsR {
+    /* this is drawing the irregular shape, it is done with borders*/
+    background: #4C9880;
+    /**/
+    border-bottom: 153px solid #FFFFFF;
+    /*border-left: 20px solid transparent;*/
+    border-right: 52px solid transparent;
+    border-top: 17px solid transparent;
+    /**/
+    height: 0;
+    max-width: 95%;
+    transform: rotate(-2deg);
+    -ms-transform: rotate(-2deg);
+    /* IE 9 */
+    -webkit-transform: rotate(-2deg);
+    /* Safari and Chrome */
+    margin-bottom: 40px;
+  }
+
+  /* line 2128, scss/theme.scss */
+  #wrapperIconTipsR #irregularShapeIconTipsR #shapeIconTipsR.iconTips h2, #wrapperIconTipsR #irregularShapeIconTipsR #shapeIconTipsR.iconTips h3 {
+    /* this position the title and add the white background */
+    width: 485px;
+    color: #45494b;
+    padding: 0px;
+    /**/
+    margin: 15px 60px 3px 80px;
+  }
+  /* line 2136, scss/theme.scss */
+  #wrapperIconTipsR #irregularShapeIconTipsR #shapeIconTipsR.iconTips p, #wrapperIconTipsR #irregularShapeIconTipsR #shapeIconTipsR.iconTips h4 {
+    margin: 0px 60px 2px 80px;
+    padding: 0px;
+    color: #45494b;
+    font-size: 16px !important;
+    /*	border:1px solid #000000;*/
+    width: 230px;
+  }
+}
+@media (min-width: 768px) {
+  /*CUSTOM*/
+  /* line 2150, scss/theme.scss */
+  #wrapperskip {
+    /* this is the whole section, this section needs some adjustment due to the position in a smaller resolution*/
+    min-width: 300px;
+    margin: -3px 0 2px -30px;
+    background: url(C218_new/bg_skip2.png) no-repeat;
+    background-position: bottom left;
+    padding: 0 0 0 10px;
+    min-height: 340px;
+  }
+
+  /* line 2159, scss/theme.scss */
+  #irregularShape {
+    /* this is drawing the irregular shape, it is done with borders*/
+    border-bottom: 275px solid #e6e6e6;
+    border-left: 7px solid transparent;
+    border-right: 30px solid transparent;
+    border-top: 30px solid transparent;
+    height: 0;
+    width: 690px;
+    transform: rotate(-2deg);
+    -ms-transform: rotate(-2deg);
+    /* IE 9 */
+    -webkit-transform: rotate(-2deg);
+    /* Safari and Chrome */
+    background: url(C218_new/bg_skip.png) no-repeat -21px 30px;
+  }
+
+  /* line 2174, scss/theme.scss */
+  .irregularShape > .skiptothetest {
+    margin-left: 115px;
+  }
+
+  /* line 2177, scss/theme.scss */
+  #skip {
+    margin-left: 5%;
+  }
+  /* line 2179, scss/theme.scss */
+  #skip img.skipBorder {
+    /* this position the litle green border */
+    position: absolute;
+    left: 125px;
+  }
+  /* line 2184, scss/theme.scss */
+  #skip.skiptothetest h3 {
+    /* this position the title and add the white background */
+    width: 485px;
+    height: 51px;
+    background: #FFFFFF;
+    padding: 15px 0 0 10px;
+    margin-left: 120px;
+  }
+
+  /* line 2193, scss/theme.scss */
+  .skiptest {
+    /* this position the icon skip */
+    position: absolute;
+    top: 10px;
+    left: 600px;
+  }
+
+  /* ----------------------------------------------------------------------------------------------------------------------------------------------------------*/
+  /* START ICON Tip RIGHT ////*/
+  /* line 2201, scss/theme.scss */
+  #wrapperIconTipsR {
+    /* this is the whole section*/
+    max-width: 95%;
+    margin: 25px 0 20 15px;
+    min-height: 300px;
+  }
+
+  /* line 2207, scss/theme.scss */
+  #irregularShapeIconTipsR {
+    /* this is drawing the irregular shape, it is done with borders*/
+    background: #4C9880;
+    /**/
+    border-bottom: 153px solid #FFFFFF;
+    /*border-left: 20px solid transparent;*/
+    border-right: 52px solid transparent;
+    border-top: 17px solid transparent;
+    /**/
+    height: 0;
+    max-width: 95%;
+    transform: rotate(-2deg);
+    -ms-transform: rotate(-2deg);
+    /* IE 9 */
+    -webkit-transform: rotate(-2deg);
+    /* Safari and Chrome */
+    margin-bottom: 40px;
+  }
+
+  /* line 2226, scss/theme.scss */
+  #wrapperIconTipsR #irregularShapeIconTipsR #shapeIconTipsR.iconTips h2, #wrapperIconTipsR #irregularShapeIconTipsR #shapeIconTipsR.iconTips h3 {
+    /* this position the title and add the white background */
+    width: 485px;
+    color: #45494b;
+    padding: 0px;
+    /**/
+    margin: 15px 60px 3px 80px;
+  }
+  /* line 2234, scss/theme.scss */
+  #wrapperIconTipsR #irregularShapeIconTipsR #shapeIconTipsR.iconTips p, #wrapperIconTipsR #irregularShapeIconTipsR #shapeIconTipsR.iconTips h4 {
+    margin: 0px 60px 2px 100px;
+    padding: 0px;
+    color: #45494b;
+    font-size: 16px !important;
+    /*	border:1px solid #000000;*/
+    width: 300px;
+  }
+}
+@media (min-width: 1200px) {
+  /*CUSTOM*/
+  /* line 2248, scss/theme.scss */
+  #wrapperskip {
+    /* this is the whole section*/
+    min-width: 300px;
+    margin: -3px 0 100px -10px;
+    background: url(C218_new/bg_skip2.png) no-repeat;
+    background-position: bottom left;
+    padding: 0 0 0 10px;
+    min-height: 340px;
+  }
+
+  /* line 2257, scss/theme.scss */
+  #irregularShape {
+    /* this is drawing the irregular shape, it is done with borders*/
+    border-bottom: 275px solid #e6e6e6;
+    border-left: 7px solid transparent;
+    border-right: 30px solid transparent;
+    border-top: 30px solid transparent;
+    height: 0;
+    width: 690px;
+    transform: rotate(-2deg);
+    -ms-transform: rotate(-2deg);
+    /* IE 9 */
+    -webkit-transform: rotate(-2deg);
+    /* Safari and Chrome */
+    background: url(C218_new/bg_skip.png) no-repeat -21px 30px;
+  }
+
+  /**/
+  /* line 2273, scss/theme.scss */
+  .irregularShape > .skiptothetest {
+    margin-left: 115px;
+  }
+
+  /* line 2276, scss/theme.scss */
+  #skip {
+    margin-left: 5%;
+  }
+  /* line 2278, scss/theme.scss */
+  #skip img.skipBorder {
+    /* this position the litle green border */
+    position: absolute;
+    left: 125px;
+  }
+  /* line 2283, scss/theme.scss */
+  #skip.skiptothetest h3 {
+    /* this position the title and add the white background */
+    width: 485px;
+    height: 51px;
+    background: #FFFFFF;
+    padding: 15px 0 0 10px;
+    margin-left: 120px;
+  }
+
+  /* line 2292, scss/theme.scss */
+  .skiptest {
+    /* this position the icon skip */
+    position: absolute;
+    top: 10px;
+    left: 600px;
+  }
+
+  /* ----------------------------------------------------------------------------------------------------------------------------------------------------------*/
+  /* START ICON Tip RIGHT ////*/
+  /* line 2300, scss/theme.scss */
+  #wrapperIconTipsR {
+    /* this is the whole section*/
+    max-width: 95%;
+    margin: 25px 0 20 15px;
+    min-height: 300px;
+  }
+
+  /* line 2306, scss/theme.scss */
+  #irregularShapeIconTipsR {
+    /* this is drawing the irregular shape, it is done with borders*/
+    background: #FFFFFF;
+    /**/
+    border-bottom: 375px solid #4C9880;
+    /*border-left: 20px solid transparent;*/
+    border-right: 52px solid transparent;
+    border-top: 17px solid transparent;
+    /**/
+    height: 0;
+    max-width: 95%;
+    transform: rotate(-2deg);
+    -ms-transform: rotate(-2deg);
+    /* IE 9 */
+    -webkit-transform: rotate(-2deg);
+    /* Safari and Chrome */
+    margin-bottom: 40px;
+  }
+
+  /* line 2325, scss/theme.scss */
+  #wrapperIconTipsR #irregularShapeIconTipsR #shapeIconTipsR.iconTips h2, #wrapperIconTipsR #irregularShapeIconTipsR #shapeIconTipsR.iconTips h3 {
+    /* this position the title and add the white background */
+    min-width: 485px;
+    color: #45494b;
+    padding: 0px;
+    /**/
+    margin: 15px 60px 3px 100px;
+  }
+  /* line 2333, scss/theme.scss */
+  #wrapperIconTipsR #irregularShapeIconTipsR #shapeIconTipsR.iconTips p, #wrapperIconTipsR #irregularShapeIconTipsR #shapeIconTipsR.iconTips h4 {
+    margin: 0px 60px 2px 130px;
+    padding: 0px;
+    color: #45494b;
+    font-size: 16px !important;
+    /*	border:1px solid #000000;*/
+    min-width: 300px;
+  }
+}
+/* ----------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/* ----------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/* END ///// DESIGN SKIP TO TEST
+/* JBB
+/* ----------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/* ----------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/* ----------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/* ----------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/* START ICONS///// 
+/* JBB
+/* ----------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/* ----------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/* line 2357, scss/theme.scss */
+#wrapperIcon {
+  /* this is the whole section*/
+  min-width: 200px;
+  margin: 3px 0 30px -10px;
+  background-position: bottom left;
+  padding: 0 0 0 10px;
+  min-height: 40px;
+  /*	border:#486a61 dotted 1px;*/
+}
+
+/* line 2367, scss/theme.scss */
+#irregularShapeIcon {
+  /* this is drawing the irregular shape, it is done with borders*/
+  border-bottom: 60px solid #e6e6e6;
+  border-left: 7px solid transparent;
+  border-right: 30px solid transparent;
+  border-top: 30px solid transparent;
+  height: 0;
+  width: 380px;
+  transform: rotate(-2deg);
+  -ms-transform: rotate(-2deg);
+  /* IE 9 */
+  -webkit-transform: rotate(-2deg);
+  /* Safari and Chrome */
+}
+
+/* line 2383, scss/theme.scss */
+#wrapperIcon p, #wrapperIcon h4 {
+  padding: 0px 5px 10px 50px;
+  color: #486a61;
+}
+
+/* ----------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/* START ICON AUDIO ////*/
+/* line 2392, scss/theme.scss */
+.iconAudio {
+  /* this position the icon skip */
+  position: absolute;
+  margin: -5px 0px 5px -40px;
+  background: url(C218_new/ico_audio.png) no-repeat;
+  transform: rotate(2deg);
+  -ms-transform: rotate(2deg);
+  /* IE 9 */
+  -webkit-transform: rotate(2deg);
+  /* Safari and Chrome */
+}
+
+/* line 2405, scss/theme.scss */
+#shapeIcon.iconAudio h2, #shapeIcon.iconAudio h3 {
+  /* this position the title and add the white background */
+  width: 485px;
+  min-height: 80px;
+  padding: 0px 0 0 100px;
+  margin: 22px 0px 10px 0px;
+}
+
+/* ----------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/* START ICON video ////*/
+/* line 2417, scss/theme.scss */
+.iconVideo {
+  /* this position the icon skip */
+  position: absolute;
+  margin: -5px 0px 5px -40px;
+  background: url(C218_new/ico_video.png) no-repeat;
+  transform: rotate(2deg);
+  -ms-transform: rotate(2deg);
+  /* IE 9 */
+  -webkit-transform: rotate(2deg);
+  /* Safari and Chrome */
+}
+
+/* line 2430, scss/theme.scss */
+#shapeIcon.iconVideo h2, #shapeIcon.iconVideo h3 {
+  /* this position the title and add the white background */
+  width: 485px;
+  min-height: 80px;
+  padding: 0px 0 0 100px;
+  margin: 22px 0px 10px 0px;
+}
+
+/* ----------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/* START ICON Tip LEFT ////*/
+/* line 2442, scss/theme.scss */
+#wrapperIconTips {
+  /* this is the whole section*/
+  min-width: 200px;
+  margin: 3px 0 30px -10px;
+  background-position: bottom left;
+  padding: 0 0 0 10px;
+  min-height: 200px;
+  /*	border:#486a61 dotted 1px;*/
+}
+
+/* line 2452, scss/theme.scss */
+#irregularShapeIconTips {
+  /* this is drawing the irregular shape, it is done with borders*/
+  border-bottom: 300px solid #d7f3b4;
+  /*#9ad750 original green from palette*/
+  border-left: 7px solid transparent;
+  border-right: 30px solid transparent;
+  border-top: 30px solid transparent;
+  height: 0;
+  min-width: 380px;
+  transform: rotate(-2deg);
+  -ms-transform: rotate(-2deg);
+  /* IE 9 */
+  -webkit-transform: rotate(-2deg);
+  /* Safari and Chrome */
+}
+
+/* line 2468, scss/theme.scss */
+.iconTips {
+  /* this position the icon skip */
+  position: absolute;
+  margin: -5px 0px 5px -40px;
+  background: url(C218_new/ico_tip.png) no-repeat;
+  transform: rotate(2deg);
+  -ms-transform: rotate(2deg);
+  /* IE 9 */
+  -webkit-transform: rotate(2deg);
+  /* Safari and Chrome */
+}
+
+/* line 2481, scss/theme.scss */
+#shapeIconTips.iconTips h2, #shapeIconTips.iconTips h3 {
+  /* this position the title and add the white background */
+  width: 485px;
+  color: #45494b;
+  min-height: 40px;
+  padding: 0px 0 0 100px;
+  margin: 22px 0px 10px 0px;
+}
+
+/* line 2492, scss/theme.scss */
+#wrapperIconTips p, #wrapperIconTips h4 {
+  padding: 0px 5px 10px 120px;
+  color: #45494b;
+  font-size: 16px !important;
+}
+
+/* line 2499, scss/theme.scss */
+.spinner {
+  margin-left: 22px;
+  width: calc(100% - 22px);
+}
+@media (max-width: 767px) {
+  /* line 2499, scss/theme.scss */
+  .spinner {
+    margin-left: 0;
+    width: 100%;
+  }
+}
+
+/*# sourceMappingURL=theme.css.map */
